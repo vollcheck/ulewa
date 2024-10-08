@@ -20,6 +20,7 @@
  ::fetch-city
  (fn [{:keys [db]} [_ city-name]]
    (js/console.log "fetching city with for name: " city-name)
+   (js/console.log "fetching city with for name: " config/api-key)
    {:db (assoc db :loading true)
     :http-xhrio (merge default-fetch
                        {:uri config/geo-api-url

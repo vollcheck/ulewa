@@ -1,11 +1,12 @@
 (ns starter.config
-  (:require [clojure.string :as str]))
+  (:require [clojure.string :as str]
+            [clojure.java.io :as io]))
 
 (def debug?
   ^boolean goog.DEBUG)
 
 (def api-key
-  (-> "resources/API_KEY" slurp str/trim))
+  "") ;; TODO: load it dynamically
 
 (def geo-api-url
   "http://api.openweathermap.org/geo/1.0/direct")
