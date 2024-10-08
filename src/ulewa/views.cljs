@@ -30,7 +30,7 @@
 (defn city-entry []
   [city-input
    {:id "search-city"
-    :placeholder "city name"
+    :placeholder "give me a city name"
     :on-save #(when (seq %)
                 (dispatch [::events/fetch-city %]))}])
 
