@@ -1,4 +1,4 @@
-(ns starter.config
+(ns ulewa.config
   (:require [clojure.string :as str]
             [clojure.java.io :as io]))
 

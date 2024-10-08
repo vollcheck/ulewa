@@ -1,11 +1,11 @@
-(ns starter.core
+(ns ulewa.core
   (:require
    [reagent.core :as reagent]
    [reagent.dom :as rdom]
    [re-frame.core :as re-frame]
-   [starter.events :as events]
-   [starter.views :as views]
-   [starter.config :as config]
+   [ulewa.events :as events]
+   [ulewa.views :as views]
+   [ulewa.config :as config]
    ))
 
 (defn dev-setup []

@@ -1,10 +1,10 @@
-(ns starter.events
+(ns ulewa.events
   (:require
    [re-frame.core :as rf]
    [day8.re-frame.http-fx]
    [ajax.core :as ajax]
-   [starter.config :as config]
-   [starter.db :as db]))
+   [ulewa.config :as config]
+   [ulewa.db :as db]))
 
 (rf/reg-event-db
  ::initialize-db

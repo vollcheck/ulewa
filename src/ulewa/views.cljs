@@ -1,11 +1,11 @@
-(ns starter.views
+(ns ulewa.views
   (:require
    [clojure.string :as str]
    [goog.string :as gstring]
    [reagent.core :as reagent]
    [re-frame.core :refer [dispatch subscribe]]
-   [starter.events :as events]
-   [starter.subs :as subs]
+   [ulewa.events :as events]
+   [ulewa.subs :as subs]
    ))
 
 (defn city-input [{:keys [title on-save on-stop]}]

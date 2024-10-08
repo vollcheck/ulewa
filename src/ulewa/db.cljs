@@ -1,4 +1,4 @@
-(ns starter.db)
+(ns ulewa.db)
 
 (def default-db
   {})
