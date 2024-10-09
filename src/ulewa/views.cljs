@@ -5,8 +5,7 @@
    [reagent.core :as reagent]
    [re-frame.core :refer [dispatch subscribe]]
    [ulewa.events :as events]
-   [ulewa.subs :as subs]
-   ))
+   [ulewa.subs :as subs]))
 
 (defn city-input [{:keys [title on-save on-stop]}]
   (let [val (reagent/atom title)
@@ -38,7 +37,7 @@
   [:<>
    [:div
     [:p "name: " name]
-    [:p "lat/lon: " (gstring/format "(%.2f/%.2f)" lat lon)]
+    [:p "lat/lon: " (gstring/format "%.2f/%.2f" lat lon)]
     [:p "country: " country]
     [:p "state: " state]]])
 
@@ -56,11 +55,10 @@
       [:p "humidity: " humidity]]]))
 
 (defn main-panel []
-  #_[:div [:h1 "Hello"]]
   (let [loading (subscribe [::subs/loading])
         city-data (subscribe [::subs/city-data])
         weather-data (subscribe [::subs/city-weather])]
-    [:div
+    [:main.container
      [:h1
       "Hello from " (if @city-data
                       (str (:name @city-data) "!")

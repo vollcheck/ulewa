@@ -1,6 +1,5 @@
 (ns ulewa.config
-  (:require [clojure.string :as str]
-            [clojure.java.io :as io]))
+  (:require [clojure.string :as str]))
 
 (def debug?
   ^boolean goog.DEBUG)
