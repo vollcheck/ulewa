@@ -1,6 +1,18 @@
 # ulewa - weather application written in re-frame for learning purposes
 
-### running the application
+### running the application from within emacs
+
+simply run:
+```
+cider-jack-in-cljs
+```
+
+that would work out of the box, just wait for the REPL to display
+```
+[:app] Build completed...
+```
+
+### running the application from the console
 
 0. populate `api-key` value in the `ulewa.config` namespace
 
