@@ -2,6 +2,8 @@
 
 ### running the application
 
+0. populate `api-key` value in the `ulewa.config` namespace
+
 1. run from your console:
 ``` shell
 shadow-cljs watch app
